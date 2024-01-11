@@ -25,7 +25,12 @@ const storage = multer.diskStorage({
 
 const upload = multer({ storage }).any();
 
-app.use(cors());
+// middleware
+const corsOptions = {
+  origin: "https://seopage1-task-front-end.onrender.com", // frontend URI (ReactJS)
+}
+
+app.use(cors(corsOptions));
 // app.use(rateLimiter);
 app.use(morgan("dev"));
 app.use(bodyParser.json());
