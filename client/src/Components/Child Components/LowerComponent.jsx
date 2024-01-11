@@ -23,7 +23,7 @@ function LowerComponent({ setModal, modal, list }) {
           src="/images/logo/attach.png"
           alt="Attach"
         />
-        <p>{list.length === 0 ? 0 : list.length + 1}</p>
+        <p>{list.length === 0 ? 0 : list.length}</p>
       </div>
       <div className="flex justify-center items-center gap-1">
         <img className="w-3" src="/images/logo/calendar.png" alt="Calendar" />
