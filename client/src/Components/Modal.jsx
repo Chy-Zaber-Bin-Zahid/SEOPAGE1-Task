@@ -17,7 +17,7 @@ function Modal({ modal, setModal, list, setList }) {
 
     try {
       const result = await axios.post(
-        "https://seopage1-task.onrender.com/api/user/upload",
+        "http://localhost:3001/api/user/upload",
         formData
       );
       setFiles([]);
