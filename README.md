@@ -1,5 +1,4 @@
 # SEOPAGE1-Task
-
 ## Project Setup
 
 1. Clone github repository on your local machine
