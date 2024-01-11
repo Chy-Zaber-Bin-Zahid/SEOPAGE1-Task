@@ -33,6 +33,10 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 // Router
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
+
 app.post("/api/user/upload", upload, async (req, res, next) => {
   try {
     const files = req.files || []; // Access uploaded files directly from req.files
