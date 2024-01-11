@@ -40,7 +40,7 @@ function Modal({ modal, setModal, list, setList }) {
       try {
         console.log("object");
         const result = await axios.get(
-          "http://localhost:3001/api/user/fileName"
+          "https://seopage1-task.onrender.com/api/user/fileName"
         );
         console.log("out");
         const files = result.data.payload.fileNames;
